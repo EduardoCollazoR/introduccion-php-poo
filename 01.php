@@ -1,6 +1,9 @@
-<?php include 'includes/header.php';
+<?php
 
 declare(strict_types=1);
+include 'includes/header.php';
+
+
 // definir una clase php < 7 V
 // class Producto
 // {
@@ -17,11 +20,11 @@ declare(strict_types=1);
 // }
 
 
-
+//abstraccion
 //definir clase en php 8
 class Producto
 {
-    //abstraccion
+
     public function __construct(public string $nombre, public int $precio, public bool $disponible)
     {
     }
